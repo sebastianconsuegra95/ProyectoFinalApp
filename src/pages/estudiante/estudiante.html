@@ -1,0 +1,120 @@
+<!--
+  Generated template for the EstudiantePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{estudiante}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="closeModal()">
+          <ion-icon name="md-close"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding *ngFor="let X of x">
+
+  <ion-item-group>
+    <ion-item-divider color="light"> Laboratorio 1 </ion-item-divider>
+    <ion-item>
+      1° Pregunta
+      <ion-badge item-end>{{X.Lab1.nota1}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      2° Pregunta
+      <ion-badge item-end>{{X.Lab1.nota2}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      3° Pregunta
+      <ion-badge item-end>{{X.Lab1.nota3}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      4° Pregunta
+      <ion-badge item-end>{{X.Lab1.nota4}}</ion-badge>
+    </ion-item>
+    <ion-item text-wrap>
+      5° Pregunta: {{X.Lab1.nota5}}
+    </ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider color="light"> Laboratorio 2 </ion-item-divider>
+    <ion-item>
+      1° Pregunta
+      <ion-badge item-end>{{X.Lab2.nota1}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      2° Pregunta
+      <ion-badge item-end>{{X.Lab2.nota2}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      3° Pregunta
+      <ion-badge item-end>{{X.Lab2.nota3}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      4° Pregunta
+      <ion-badge item-end>{{X.Lab2.nota4}}</ion-badge>
+    </ion-item>
+    <ion-item text-wrap>
+      5° Pregunta: Ventaja:{{X.Lab2.nota5.ventaja}},Desventaja: {{X.Lab2.nota5.desventaja}};
+    </ion-item>
+    <ion-item>
+      4° Pregunta
+      <ion-badge item-end>{{X.Lab2.nota6}}</ion-badge>
+    </ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider color="light"> Laboratorio 3 </ion-item-divider>
+    <ion-item>
+      1° Pregunta
+      <ion-badge item-end>{{X.Lab3.nota1}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      2° Pregunta
+      <ion-badge item-end>{{X.Lab3.nota2}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      3° Pregunta
+      <ion-badge item-end>{{X.Lab3.nota3}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      4° Pregunta
+      <ion-badge item-end>{{X.Lab3.nota4}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      5° Pregunta
+      <ion-badge item-end>{{X.Lab3.nota5}}</ion-badge>
+    </ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider color="light"> Laboratorio 4 </ion-item-divider>
+    <ion-item>
+      1° Pregunta
+      <ion-badge item-end>{{X.Lab4.nota1}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      2° Pregunta
+      <ion-badge item-end>{{X.Lab4.nota2}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      3° Pregunta
+      <ion-badge item-end>{{X.Lab4.nota3}}</ion-badge>
+    </ion-item>
+    <ion-item text-wrap>
+      4° Pregunta: {{X.Lab4.nota4}}
+    </ion-item>
+    <ion-item>
+      5° Pregunta
+      <ion-badge item-end>{{X.Lab4.nota5}}</ion-badge>
+    </ion-item>
+  </ion-item-group>
+
+</ion-content>

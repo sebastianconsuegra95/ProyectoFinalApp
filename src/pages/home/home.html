@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+
+    </ion-title>
+    <ion-buttons>
+      <button ion-button icon-only (click)="play()">
+        <ion-icon name="play"></ion-icon> 
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<!-- <ion-content padding>
+   <h2>Book List </h2>
+   <ion-list>
+       <ion-item *ngFor="let book of books | async">
+       <p>Book: {{book.title}}</p> 
+      <p>Author: {{book.author}}</p>
+      <p>Tension: {{book.Tension}}</p>
+    </ion-item>   
+  </ion-list>  
+</ion-content> -->
+
+<ion-content class="card-background-page">
+
+  <ion-card *ngFor="let Database of DataFirebase | async" ks>
+    <img src="../assets/icon/torre2.png" />
+    <div class="card-title">Voltage</div>
+    <div class="card-subtitle">{{Database.voltage}}</div>
+  </ion-card>
+
+  <ion-card *ngFor="let Database of DataFirebase | async" ks>
+    <img src="../assets/icon/torre3.png" />
+    <div class="card-title">Current</div>
+    <div class="card-subtitle">{{Database.current}}</div>
+  </ion-card>
+
+  <ion-card *ngFor="let Database of DataFirebase | async" ks>
+    <img src="../icon/torre4.png" />
+    <div class="card-title">Frecuency</div>
+    <div class="card-subtitle">{{Database.frecuency}}</div>
+  </ion-card>
+
+  <ion-card *ngFor="let Database of DataFirebase | async" ks>
+    <img src="../assets/icon/torre5.png" />
+    <div class="card-title">Power</div>
+    <div class="card-subtitle">{{Database.power}}</div>
+  </ion-card>
+
+  <ion-card *ngFor="let Database of DataFirebase | async" ks>
+    <img src="../assets/icon/torre6.png" />
+    <div class="card-title">Energy</div>
+    <div class="card-subtitle">{{Database.energy}}</div>
+  </ion-card>
+
+  <ion-input type="text"  ></ion-input>
+  <button ion-button (click)="play(user)">add</button>
+</ion-content>

@@ -1,0 +1,27 @@
+page-laboratorio4 {
+
+    .fondo{
+        background-image: url("../assets/img/ahorro.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;        
+    }
+    .ajuste{
+        img{
+            width:inherit;
+        }
+    }
+    .font{
+        font-family: tabitha;
+    }
+
+    .toolbar-background {
+        background-color: rgb(136, 136, 136);
+    }
+    .buttomColor{
+        background-color: rgb(136, 136, 136);
+    }
+
+}

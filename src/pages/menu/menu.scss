@@ -1,0 +1,27 @@
+page-menu {
+
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+.rotate{
+    animation-duration: 5s linear infinite;
+    animation-name: rotate-animation;    
+
+}
+    @keyframes rotate-animation{
+
+        0%{
+            transform: rotate(0deg)
+        } to {
+            transform: rotate(1turn);
+        }
+        
+    }
+    .toolbar-background {
+        background-color: #298CB3;
+    }
+
+}

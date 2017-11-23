@@ -1,0 +1,92 @@
+<!--
+  Generated template for the RespuestasLab2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Respuestas Correctas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let p1 of P1">
+    <ion-card-header text-wrap style="font-weight:bold">
+      El elemento con el que se fabrican las celdas solares es:
+      <p>&nbsp;</p>
+      <i>
+        Silicio
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      Como se explicó en el contenido de este laboratorio, las celdas solares están compuestas de un material semiconductor, los cuales pueden ser 
+      Silicio o Galio. los cuales se excitan al exponerse a la luz de sol y así generar electricidad.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let p2 of P2">
+    <ion-card-header text-wrap style="font-weight:bold">
+      Las celdas solares están formadas de muchos paneles solares.
+      <p>&nbsp;</p>
+      <i>
+        Falso
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      Los paneles solares están compuestos de muchas celdas solares. (Ver ilustración en el contenido de este laboratorio)
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let p3 of P3">
+    <ion-card-header text-wrap style="font-weight:bold">
+      La vida útil de un panel solar gira alrededor de:
+      <p>&nbsp;</p>
+      <i>
+        30 o mas años
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      Los paneles solares cuentan con una gran vida útil. No necesitan de tanto mantenimiento.
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let p4 of P4">
+    <ion-card-header text-wrap style="font-weight:bold">
+      De los siguientes tipos de celdas solares, cuál de ellas es capaz de producir energía eléctrica así la zona se encuentre
+      nublada.
+      <p>&nbsp;</p>
+      <i>
+        Celda Monocristalina
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      La celda monocristalina es fabricada con un solo cristal de Silicio, es decir que tiene la mejor eficiencia ante los demás tipos de celda.
+      Ya que no es mezclada con otros cristales de Silicio que pueden contener estructuras químicas diferentes.  
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let p5 of P5">
+    <ion-card-header text-wrap style="font-weight:bold">
+      Que tipo de panel es el siguiente:      
+      <p>&nbsp;</p>
+      <i>
+        Policristalino
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      Al dirigirse a la imagen es apreciable ver una superficie descolorida en algunas secciones. Esta superficie no cuenta con un solo tono de color. 
+      Es decir, que esta compuesto de muchos cristales de Silicio
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let c of C">
+    <ion-card-header text-wrap style="font-weight:bold">
+      <p>
+        <i>
+          No has tenido ninguna respuesta correcta</i>
+      </p>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,84 @@
+page-laboratorio2 {
+
+    
+    .fondo{
+        background-image: url("../assets/img/sol2.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;        
+    }
+
+    .fondo2{
+        background-image: url("../assets/img/fondopoli.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;        
+    }
+    .fondo3{
+        background-image: url("../assets/img/fondoamorfo.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;        
+    }
+    .fondo4{
+        background-image: url("../assets/img/sol2.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;        
+    }
+   
+    .background{
+        background-color: rgb(180, 180, 180);
+    }
+
+    .nav {
+        position: relative;
+        left: 0px;
+        width: 250px;
+      }
+
+    .no-center{
+        // margin-right: 500px;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-name: move-sun
+    }
+
+    @keyframes move-sun {
+        0%{
+            transform: translate3d(-300px,30px,0);
+        }
+        50%{
+            transform: translate3d(0,-20px,0);
+        }
+        100%{
+            transform: translate3d(300px,30px,0);
+        }
+        
+    }
+    .ajuste{
+        img{
+            width:inherit;
+        }
+    }
+    .font{
+        font-family: tabitha;
+    }
+    .toolbar-background {
+        background-color: rgb(74, 164, 216);
+    }
+    .buttomColor{
+        background-color: rgb(74, 164, 216);
+    }
+
+
+}

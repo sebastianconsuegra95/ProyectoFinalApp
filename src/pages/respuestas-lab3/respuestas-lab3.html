@@ -1,0 +1,97 @@
+<!--
+  Generated template for the RespuestasLab3Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Respuestas Correctas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let p1 of P1">
+    <ion-card-header text-wrap style="font-weight:bold">
+      Las instalaciones solares de producción de electricidad mediante la recepción de la luz solar se clasifican en:
+      <p>&nbsp;</p>
+      <i>
+        Autónomas y Conectadas a la red
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      Autónomas son las instalaciones que son autosustentables donde es necesario el uso de baterías para suministras energía en
+      las noches. Las conectadas a la red o interconectadas, necesariamente no deben usar baterías, estas instalaciones ayudan
+      a devolverle la energía a la red y así disminuir el consumo de energía.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let p2 of P2">
+    <ion-card-header text-wrap style="font-weight:bold">
+      Si un panel solar fotovoltaico es capaz de producir una tensión de 5V, ¿Qué tensión podremos medir en los extremos de 10
+      paneles solares conectados en serie?
+      <p>&nbsp;</p>
+      <i>
+              50V
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      La conexión en serie aumenta la tensión en el número de paneles solares conectados mientras que la corriente se mantiene
+      igual.
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let p3 of P3">
+    <ion-card-header text-wrap style="font-weight:bold">
+      La misión que tienen las baterías en un sistema fotovoltaico es:
+      <p>&nbsp;</p>
+      <i>
+              Almacenar energías durante un número determinado número de días
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      Las baterías tiene como objetivo suministrar energía durante los momentos de escasa luz solar. Por ejemplo, cuando hay nubes
+      o en las noches.
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let p4 of P4">
+    <ion-card-header text-wrap style="font-weight:bold">
+      La función del inversor en un sistema autónomo o interconectado es:
+      <p>&nbsp;</p>
+      <i>
+              Convertir la señal DC a AC
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      La energía generada por lo paneles solares es en corriente continua (DC), mientras que la red eléctrica es en corriente
+      alterna (AC);
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let p5 of P5">
+    <ion-card-header text-wrap style="font-weight:bold">
+      En el siguiente sistema se puede demostrar una conexión:
+      <p>&nbsp;</p>
+      <i>
+            Serie y Paralelo
+          </i>
+    </ion-card-header>
+    <ion-card-content>
+      En la imagen se puede ilustrar en cada ramal, dos paneles solares en serie y conexión de este cada grupo de paneles en serie
+      forman una conexión en paralelo
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let c of C">
+    <ion-card-header text-wrap style="font-weight:bold">
+      <p>
+        <i>
+              No has tenido ninguna respuesta correcta
+        </i>
+      </p>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
+

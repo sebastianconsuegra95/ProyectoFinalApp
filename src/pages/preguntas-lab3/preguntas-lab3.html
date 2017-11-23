@@ -1,0 +1,183 @@
+<!--
+  Generated template for the PreguntasLab3Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    
+      <ion-navbar>
+        <ion-title>Laboratorio 3</ion-title>
+      </ion-navbar>
+    
+    </ion-header>
+    
+    <ion-content padding class="tamaño">
+      <ion-card>
+        <ion-card-header text-wrap style="font-size:130%; font-weight:bold">
+          Las instalaciones solares de producción de electricidad mediante la recepción de la luz solar se clasifican en:
+        </ion-card-header>
+        <ion-list radio-group [(ngModel)]="p1">
+          <ion-item>
+            <ion-radio checked="false" value="1"></ion-radio>
+            <ion-label text-wrap>
+              Autónomas y Conectadas a la red
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="2"></ion-radio>
+            <ion-label text-wrap>
+              Directas e Indirectas
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="3"></ion-radio>
+            <ion-label text-wrap>
+              Directas y Autónomas
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="4"></ion-radio>
+            <ion-label text-wrap>
+              Conectadas a la red e Indirectas
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    
+      <ion-card>
+        <ion-card-header text-wrap style="font-size:130%; font-weight:bold">
+          Si un panel solar fotovoltaico es capaz de producir una tensión de 5V, ¿Qué tensión podremos medir en los extremos de 10
+          paneles solares conectados en serie?
+        </ion-card-header>
+        <ion-list radio-group [(ngModel)]="p2">
+          <ion-item>
+            <ion-radio checked="false" value="3"></ion-radio>
+            <ion-label text-wrap>
+              220V
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="2"></ion-radio>
+            <ion-label text-wrap>
+              25V
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="1"></ion-radio>
+            <ion-label text-wrap>
+              50V
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="4"></ion-radio>
+            <ion-label text-wrap>
+              110V
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    
+      <ion-card>
+        <ion-card-header text-wrap style="font-size:130%; font-weight:bold">
+            La misión que tienen las baterías en un sistema fotovoltaico es:
+        </ion-card-header>
+        <ion-list radio-group [(ngModel)]="p3">
+          <ion-item>
+            <ion-radio checked="false" value="4"></ion-radio>
+            <ion-label text-wrap>
+              Fijar la tensión con la cual trabaja el sistema
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="3"></ion-radio>
+            <ion-label text-wrap>
+              Proporcionar una potencia adicional
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="1"></ion-radio>
+            <ion-label text-wrap>
+              Almacenar energía durante un número determinado de días
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="2"></ion-radio>
+            <ion-label text-wrap>
+              Todas las respuestas son correctas
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    
+      <ion-card>
+        <ion-card-header text-wrap style="font-size:130%; font-weight:bold">
+          La función del inversor en un sistema autónomo o interconectado es:
+        </ion-card-header>
+        <ion-list radio-group [(ngModel)]="p4">
+          <ion-item>
+            <ion-radio checked="false" value="1"></ion-radio>
+            <ion-label text-wrap>
+              Convertir la señal DC a AC
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="2"></ion-radio>
+            <ion-label text-wrap>
+              Convertir la señal DC a DC
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="3"></ion-radio>
+            <ion-label text-wrap>
+              Convertir la señal AC a AC
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="4"></ion-radio>
+            <ion-label text-wrap>
+              Convertir la señal AC a DC
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    
+      <ion-card>
+        <ion-card-header text-wrap style="font-size:130%; font-weight:bold">
+          En el siguiente sistema se puede demostrar una conexión:
+        </ion-card-header>
+        <img src="../assets/img/serieparalelo.jpg">
+        <ion-list radio-group [(ngModel)]="p5">
+          <ion-item>
+            <ion-radio checked="false" value="4"></ion-radio>
+            <ion-label text-wrap>
+              Serie
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="1"></ion-radio>
+            <ion-label text-wrap>
+              Serie y Paralelo
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="2"></ion-radio>
+            <ion-label text-wrap>
+              Paralelo
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="3"></ion-radio>
+            <ion-label text-wrap>
+              Autónomo
+            </ion-label>
+          </ion-item>
+        </ion-list> 
+      </ion-card>
+    
+      <button ion-button block (click)=goMenu() class="buttomColor">
+        Enviar 
+      </button>
+    </ion-content>
+    
+    

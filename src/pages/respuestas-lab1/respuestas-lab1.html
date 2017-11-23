@@ -1,0 +1,78 @@
+<!--
+  Generated template for the RespuestasLab1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Respuestas Correctas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let p1 of P1">
+    <ion-card-header text-wrap style="font-weight:bold">
+      La energía fotovoltaica produce la electricidad:
+      <p>&nbsp;</p>
+      <i>
+          Directamente al recibir la luz solar
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      Esto es debido a que los paneles solares tienen la capacidad de transformar la energía de los rayos solares en electricidad.
+      Tan solo con exponerse a la luz solar pueden generar una cantidad de electricidad
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let p2 of P2">
+    <ion-card-header text-wrap style="font-weight:bold">
+      La energía eólica produce la electricidad:
+      <p>&nbsp;</p>
+      <i>
+          Mediante el movimiento de un generador          
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      La fuerza del viento hace que se mueva la hélice del aerogenerador que, gracias al rotor de un generador, convierte esta
+      fuerza en energía eléctrica
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let p3 of P3">
+    <ion-card-header text-wrap style="font-weight:bold">
+      La energía hidráulica produce la electricidad:
+      <p>&nbsp;</p>
+      <i>
+          Mediante el movimiento de un fluido          
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      La base de la energía hidráulica esta en aprovechar el flujo del agua desde una determinada altura. AL momento que cae, el
+      agua pasa por turbinas y por la fuerza con la que cae provoca un movimiento de un generador, creando así electricidad.
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let p4 of P4">
+    <ion-card-header text-wrap style="font-weight:bold">
+      Las energías renovables son utilizadas por hecho de ser:
+      <p>&nbsp;</p>
+      <i>
+          Una alternativa limpia que apuesta por el medio ambiente.
+      </i>
+    </ion-card-header>
+    <ion-card-content>
+      El uso de generación eléctrica con energías renovables tiene costos muy altos de inversión, no siempre es accesible en todo
+      el mundo. Ya que es muy difícil contar con algunos recursos que nos brinda el medio ambiente de la forma correcta.
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let c of C">
+    <ion-card-header text-wrap style="font-weight:bold">
+      <p>
+        <i>
+          No has tenido ninguna respuesta correcta</i>
+      </p>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

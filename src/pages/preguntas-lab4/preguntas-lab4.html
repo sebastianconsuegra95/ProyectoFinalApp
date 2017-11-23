@@ -1,0 +1,157 @@
+<!--
+  Generated template for the PreguntasLab4Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    
+      <ion-navbar>
+        <ion-title>Laboratorio 4</ion-title>
+      </ion-navbar>
+    
+    </ion-header>
+    
+    <ion-content padding class="tamaño">
+      <ion-card>
+        <ion-card-header text-wrap style="font-size:130%; font-weight:bold">
+          Dirígete al sistema fotovoltaico Alexander Von Humboldt y responde las siguientes preguntas. El sistema solar instalado cuenta
+          con paneles del tipo
+        </ion-card-header>
+        <ion-list radio-group [(ngModel)]="p1">
+          <ion-item>
+            <ion-radio checked="false" value="2"></ion-radio>
+            <ion-label text-wrap>
+              Amorfos
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="1"></ion-radio>
+            <ion-label text-wrap>
+              Monocristalinos
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="3"></ion-radio>
+            <ion-label text-wrap>
+              Policristalinos
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="4"></ion-radio>
+            <ion-label text-wrap>
+              Mixto
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    
+      <ion-card>
+        <ion-card-header text-wrap style="font-size:130%; font-weight:bold">
+          Dirígete al sistema fotovoltaico Alexander Von Humboldt y responde las siguientes preguntas. A continuación se muestra la
+          ficha técnica de los paneles solares utilizados en el sistema.
+          <img src="../assets/img/ficha.jpg"> El sistema cuenta con una conexión en serie, el valor de la tensión y corriente
+          equivalente es:
+        </ion-card-header>
+        <ion-list radio-group [(ngModel)]="p2">
+          <ion-item>
+            <ion-radio checked="false" value="4"></ion-radio>
+            <ion-label text-wrap>
+              115.2V y 16.95A
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="3"></ion-radio>
+            <ion-label text-wrap>
+              172.8V y 11.3A
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="2"></ion-radio>
+            <ion-label text-wrap>
+              60.4V y 33.9A
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="1"></ion-radio>
+            <ion-label text-wrap>
+              345.6V y 5.65A
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    
+      <ion-card>
+        <ion-card-header text-wrap style="font-size:130%; font-weight:bold">
+          El sistema Alexander Von Humboldt cuenta tan solo con dos elementos, un inversor y un controlador de carga. ¿Será que este sistema tiene la capacidad
+          de entregar energía al colegio en las noches?
+        </ion-card-header>
+        <ion-list radio-group [(ngModel)]="p3">
+          <ion-item>
+            <ion-radio checked="false" value="2"></ion-radio>
+            <ion-label text-wrap>
+              Si
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio checked="false" value="1"></ion-radio>
+            <ion-label text-wrap>
+              No
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    
+        <ion-card>
+            <ion-card-header text-wrap style="font-size:130%; font-weight:bold">
+              Es posible obtener la radiación solar del sistema gracias a la siguiente gráfica.
+              <img src="../assets/img/graficapanel.PNG"> La gráfica nos muestra en el eje X la tensión de
+              <u>un solo</u> panel solar y en su eje y su respectiva corriente. Si el sistema solar Von Humboldt que cuenta con 6 paneles solares entrega una tensión
+              de 271.2V y una corriente de 5A. ¿Cuál es a radiación solar en [W/m<sup>2</sup>]?
+            </ion-card-header>
+            <ion-list inset>
+              <ion-item>
+                <ion-input type="text" placeholder="Escriba aqui" [(ngModel)]="p4"></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-card>
+    
+          <ion-card>
+            <ion-card-header text-wrap style="font-size:130%; font-weight:bold">
+              Con respecto a la gráfica anterior. ¿Qué corriente podemos obtener si tenemos una radiación solar de 200 W/m<sup>2</sup> y una tensión de 20V?
+            </ion-card-header>
+            <ion-list radio-group [(ngModel)]="p5">
+                <ion-item>
+                  <ion-radio checked="false" value="4"></ion-radio>
+                  <ion-label text-wrap>
+                    1.00 A
+                  </ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-radio checked="false" value="3"></ion-radio>
+                  <ion-label text-wrap>
+                    1.50 A
+                  </ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-radio checked="false" value="1"></ion-radio>
+                  <ion-label text-wrap>
+                    1.20A
+                  </ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-radio checked="false" value="2"></ion-radio>
+                  <ion-label text-wrap>
+                    0.95A
+                  </ion-label>
+                </ion-item>
+              </ion-list>
+          </ion-card>
+    
+      <button ion-button block (click)=goMenu() class="buttomColor">
+        Enviar
+      </button>
+    
+    </ion-content>
+    
+    

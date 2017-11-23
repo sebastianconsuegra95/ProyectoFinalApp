@@ -1,0 +1,56 @@
+page-system {
+
+    .ios, .md {
+        
+           page-home {
+        
+               .scroll-content {
+                   background-color: map-get($colors, light);
+               }
+        
+               ion-card-header {
+                   font-weight: bold;
+               }
+        
+           }
+        
+       }
+       .rotate{
+           transform: rotate(-90deg)
+       }
+
+       .font{
+           text-align: center;
+           font-family: sans-serif;
+           background-color: white; 
+           ion-col{
+            font-size: large;
+           }
+           h2{
+               font-weight: 600;
+               font-size: smaller;
+           }
+           div{
+               font-size: xx-large;   
+            }
+            ion-item{
+                background-color: #FFFFFF;
+            }
+            p{
+                font-size: 60%;
+                font-style: italic;
+                
+            }
+           
+       }
+       .toolbar-background {
+        background-color: #298CB3;
+    }
+
+    .margin{
+        ion-item{
+            padding-left: 0;
+        }
+    }
+
+}

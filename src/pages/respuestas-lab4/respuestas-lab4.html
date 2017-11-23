@@ -1,0 +1,81 @@
+<!--
+  Generated template for the RespuestasLab4Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>respuestasLab4</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let p1 of P1">
+    <ion-card-header text-wrap style="font-weight:bold">
+      Dirígete al sistema fotovoltaico Alexander Von Humboldt y responde las siguientes preguntas. El sistema solar instalado cuenta
+      con paneles del tipo
+      <p>&nbsp;</p>
+      <i>
+              Monocristalinos
+            </i>
+    </ion-card-header>
+    <ion-card-content>
+      Observando los paneles es notable ver un solo tono de color y dicho solar se torna en un azul oscuro
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let p2 of P2">
+    <ion-card-header text-wrap style="font-weight:bold">
+      Dirígete al sistema fotovoltaico Alexander Von Humboldt y responde las siguientes preguntas. A continuación se muestra la
+      ficha técnica de los paneles solares utilizados en el sistema. El sistema cuenta con una conexión en serie, el valor
+      de la tensión y corriente equivalente es:
+      <p>&nbsp;</p>
+      <i>
+              345.6V y 5.65A
+            </i>
+    </ion-card-header>
+    <ion-card-content>
+      El sistema solar Alexander Von Humboldt cuenta con 6 paneles en serie, es decir que su tensión equivalente será la tensión
+      de la ficha técnica [Vpmax] multiplicada por el numero de paneles, es decir 6. La corriente en una conexión serie se
+      mantiene igual en todos los paneles, esta corriente es la corriente maxima de los paneles [Ipmax]
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let p3 of P3">
+    <ion-card-header text-wrap style="font-weight:bold">
+      El sistema Alexander Von Humboldt cuenta tan solo con dos elementos, un inversor y un controlador de carga. ¿Será que este
+      sistema tiene la capacidad de entregar energía al colegio en las noches?
+      <p>&nbsp;</p>
+      <i>
+              No
+            </i>
+    </ion-card-header>
+    <ion-card-content>
+      Para poder suministrar energía en las noches es necesario el uso de baterías.
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let p4 of P4">
+    <ion-card-header text-wrap style="font-weight:bold">
+      Con respecto a la gráfica anterior. ¿Qué corriente podemos obtener si tenemos una radiación solar de 200 W/m<sup>2</sup>      y una tensión de 20V?
+      <p>&nbsp;</p>
+      <i>
+              1.20A
+            </i>
+    </ion-card-header>
+    <ion-card-content>
+      Dirigiéndonos a la gráfica y escogiendo la función equivalente a 200 W/m podemos observar que para 20V la corriente mas aproximada
+      es de 1.20A
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let c of C">
+    <ion-card-header text-wrap style="font-weight:bold">
+      <p>
+        <i>
+              No has tenido ninguna respuesta correcta</i>
+      </p>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

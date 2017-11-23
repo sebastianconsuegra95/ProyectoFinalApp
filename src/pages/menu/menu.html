@@ -1,0 +1,85 @@
+<!--
+  Generated template for the MenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+
+    <button ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+          </button>
+    <ion-title>
+      Contenido
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding ng-controller="MenuPage">
+
+  <ion-card>
+    <img src="../assets/img/fotolab11.jpeg" style="max-width:400px" class="center" (click)="lab1()">
+    <ion-card-header (click)="lab1()" text-wrap style="font-size:large; font-weight:bold">
+      Laboratorio 1: Introducción a Energías Renovables <i style="font-size:70%">{{notalab1}}</i>
+    </ion-card-header>
+    <ion-card-content (click)="lab1()" text-wrap style="font-size:medium; padding-bottom:1px">
+      En esta sección podrás adquirir los conocimientos básicos de las energías renovables, ¿Qué son las energías renovables?,
+      ¿Qué son las energías no renovables? ¿Cuáles son los tipos de energías renovables? &nbsp;
+    </ion-card-content>
+    <div style="padding-left:16px; padding-right:16px; padding-bottom:13px">
+      <button ion-button outline block style="font-size:11px" *ngFor="let a of A" (click)="respuestasLab1()">
+            {{a}}
+        </button>
+    </div>
+  </ion-card> 
+
+  <ion-card>
+    <img src="../assets/img/foto.png" style="max-width:400px" class="center" (click)="lab2()">
+    <ion-card-header (click)="lab2()" text-wrap style="font-size:large; font-weight:bold">
+      Laboratorio 2: La Energía Fotovoltaica <i style="font-size:70%">{{notalab2}}</i>
+    </ion-card-header>
+    <ion-card-content (click)="lab2()" text-wrap style="font-size:medium">
+      En esta sección profundizaremos en la energía Fotovoltaica, ¿Cómo funciona la generación de energía por medio de los paneles
+      fotovoltaicos? ¿Cuáles son sus ventajas y desventajas? ¿Qué es la celda solar? ¿Cuáles son los tipos de paneles Fotovoltáicos?
+    </ion-card-content>
+    <div style="padding-left:16px; padding-right:16px; padding-bottom:13px">
+      <button ion-button outline block style="font-size:11px" *ngFor="let b of B" (click)="respuestasLab2()">
+              {{b}}
+          </button>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <img src="../assets/img/fotolab3.png" style="max-width:400px" class="center" (click)="lab3()">
+    <ion-card-header (click)="lab3()" text-wrap style="font-size:large; font-weight:bold">
+      Laboratorio 3: Sistemas de Paneles Solares <i style="font-size:70%">{{notalab3}}</i>
+    </ion-card-header>
+    <ion-card-content (click)="lab3()" text-wrap style="font-size:medium">
+      En esta sección podrás conocer la estructura de los Sistemas de Paneles Solares, los equipos necesarios para su funcionamiento
+      y los tipos de conexiones. ¿Qué es un sistema aislado? ¿Qué es un sistema autónomo?
+    </ion-card-content>
+    <div style="padding-left:16px; padding-right:16px; padding-bottom:13px">
+      <button ion-button outline block style="font-size:11px" *ngFor="let c of C" (click)="respuestasLab3()">
+              {{c}}
+          </button>
+    </div>
+  </ion-card>
+ 
+  <ion-card>
+    <img src="../assets/img/fotolab4.jpg" style="max-width:400px" class="center" (click)="lab4()">
+    <ion-card-header (click)="lab4()" text-wrap style="font-size:large; font-weight:bold">
+      Laboratorio 4: Sistema Fotovoltaico Alexander Von Humboldt <i style="font-size:70%"> {{notalab4}}</i>
+    </ion-card-header>
+    <ion-card-content (click)="lab4()" text-wrap style="font-size:medium">
+      En esta sección podrás conocer el nuevo sistema Fotovoltaico Alexander Von Humboldt.
+    </ion-card-content>
+    <div style="padding-left:16px; padding-right:16px; padding-bottom:13px">
+      <button ion-button outline block style="font-size:11px" *ngFor="let d of D" (click)="respuestasLab4()">
+              {{d}}
+          </button> 
+    </div>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,87 @@
+page-laboratorio1 {
+
+    @media only screen  and (min-width : 1224px) {
+        img {
+            max-width: 50%;
+        }
+    }
+
+    .fondo{
+        background-image: url("../assets/img/algo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;        
+    }
+    
+    .fondo2{
+        background-image: url("../assets/img/eolica.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;        
+    } 
+ 
+    .fondo3{
+        background-image: url("../assets/img/solar.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;        
+    }
+    .fondo4{
+        background-image: url("../assets/img/hidraulica.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;        
+    }
+    .fondo5{
+        background-image: url("../assets/img/geotermica.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;        
+    }
+
+    .rotate{
+        animation-duration: 10s;
+        border-radius: 30%;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-name: rotate-animation;    
+    
+    }
+        @keyframes rotate-animation{
+    
+            0%{ 
+                transform: rotate(0deg)
+            } to {
+                transform: rotate(1turn);
+            }
+            
+        }
+
+        .ajuste{
+            img{
+                width:inherit;
+            }
+        }
+
+        .font{
+            font-family: tabitha;
+        }
+
+        .toolbar-background {
+            background-color: rgb(67, 184, 38);
+        }
+        .buttomColor{
+            background-color: rgb(67, 184, 38);
+        }
+
+}
