@@ -40,7 +40,7 @@ export class HistoricaldataPage {
       for (var i = 0; i < data.length; i++) {
         var temporal =data[i].current;
         this.Data[i]=Number(temporal.slice(0,-1));
-        I[i]=String(i);
+        I[i]=String(i); 
       }
 
       console.log(this.Data)
